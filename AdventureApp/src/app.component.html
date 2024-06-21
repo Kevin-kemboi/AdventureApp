@@ -1,0 +1,13 @@
+<div appTalkative style="cursor: pointer; border: 1px solid black; padding: 10px;">
+    Click me to see a random message!
+  </div>
+  
+  <hr>
+  
+  <app-spinning-wheel></app-spinning-wheel>
+  
+  <hr>
+  
+  <input [(ngModel)]="inputText" placeholder="Enter text here">
+  <p [ngStyle]="{'color': inputText ? 'black' : 'red'}">{{ inputText || 'This field is required' }}</p>
+  
